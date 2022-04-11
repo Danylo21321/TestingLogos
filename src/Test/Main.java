@@ -1,3 +1,5 @@
+package Test;
+
 public class Main {
     public static void main(String[] args) {
         Lambda lambda = ((a, b, c) -> (Math.max(a, Math.max(b, c))));

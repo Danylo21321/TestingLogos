@@ -1,0 +1,4 @@
+21332,lg,televisor,m122,800
+908908,lg,televisor,m121,121
+435453,lg,televisor,m1332,11
+12321,lg,televisor,m12,1

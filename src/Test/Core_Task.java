@@ -13,22 +13,12 @@ public class Core_Task {
     public static final String path = "/Users/khrystyna_nykolyshyn/Documents/TestingLogos/";
     public static final File file = new File("1.txt");
     public static void main(String[] args) {
-        System.out.println("hello igor )");
-        InputOutput inputOutput = new InputOutput();
         List<Device> list = new ArrayList<>();
         list.add(new Device(1213L,"lg","info",21321));
-        try {
-            inputOutput.serialize(list);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        try {
-            inputOutput.deserialize(list);
-        } catch (IOException e) {
-            e.printStackTrace();
-        } catch (ClassNotFoundException e) {
-            e.printStackTrace();
-        }
+        Builder builder = new RealizeIo();
+        builder.serializeAndDeSerialize(list).writer(list);
+        InputOutput inputOutput1 = new InputOutput();
+
     }
 }
 
